@@ -1,0 +1,45 @@
+.footer-dark {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    
+}
+
+.footer-light {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(40, 6, 141);
+    
+}
+
+.foot-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0px;
+}
+
+.icony {
+    margin-top: 0px;
+}
+
+.foot-main {
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.foot-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.foot-list-item {
+    font-size: 15px;
+    list-style-type: none;
+    margin: 20px;
+}

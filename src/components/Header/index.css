@@ -1,0 +1,154 @@
+.header-container-light {
+    display: flex;
+    flex-direction: column;
+    color: rgb(46, 16, 137);
+    background-color: rgb(236, 244, 248);
+}
+
+.header-container-dark {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #150b3e;
+   
+}
+
+
+.header-1-dark {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #150b3e;
+}
+
+.header-1-light {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(236, 244, 248);
+}
+
+.headings-container-dark {
+    text-align: left;
+    margin-left: 40px;
+    color: white;
+    
+}
+
+.headings-container-light {
+    text-align: left;
+    margin-left: 40px;
+    color: rgb(40, 6, 141);
+    
+}
+
+.details-container-dark {
+    display: flex;
+    flex-direction: row;
+    background-color: #1b234f;
+    border-radius: 100px;
+    padding: 10px 15px;
+    align-items: center;
+    margin-right: 40px;
+
+}
+
+.details-container-light {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 100px;
+    padding: 10px 15px;
+    align-items: center;
+    margin-right: 40px;
+
+}
+
+.para-light {
+    font-size: 15px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: rgb(131, 120, 167);
+}
+
+
+.para-dark {
+    font-size: 15px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    
+}
+
+
+
+.heading {
+    font-size: 25px;
+    margin-top: 5px;
+    padding-top: 0px;
+    
+}
+
+.div-1-dark {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    background-color: #150b3e;
+    align-items: center;
+    align-self: center;
+    border-radius: 100px;
+    padding: 7px 5px;
+    
+}
+
+.div-1-light {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(236, 244, 248);
+    align-items: center;
+    align-self: center;
+    border-radius: 100px;
+    padding: 7px 5px;
+    
+}
+
+.icons {
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.input {
+    border: none;
+    width: 100px;
+    background-color: transparent;
+    color: #fff;
+    padding-left: 10px;
+}
+
+
+
+.icon-dark {
+    font-size: 18px;
+    padding-left: 10px;
+    color: white;
+}
+
+.icon-light {
+    font-size: 18px;
+    padding-left: 10px;
+    color: #000;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-left: 10px;
+}

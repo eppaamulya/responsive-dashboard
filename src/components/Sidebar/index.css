@@ -5,8 +5,13 @@
     height: 100vh;
     background-color: #1b234f;
     color: white;
-      
+    transition: transform 0.3s ease;
+    position: fixed;
+    z-index: 1000;
+    
+   
 }
+
 
 .sidebar-light {
     display: flex;
@@ -15,8 +20,13 @@
     height: 100vh;
     background-color: #fff;
     color: rgb(46, 16, 137);
+    transition: transform 0.3s ease;
+    position: fixed;
+    z-index: 1000;
+    
       
 }
+ 
 
 .head-1-dark{
     font-size: 20px;
@@ -100,3 +110,20 @@ ul div li {
     font-size: 13px;
     margin-top: 0px;
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    
+
+    .sidebar-dark, .sidebar-light {
+        transform: translateX(-100%);
+    }
+    
+    .visible {
+        transform: translateX(-0);
+    }
+
+    .sidebar-visible {
+        margin-left: 370px;
+    }
+}  

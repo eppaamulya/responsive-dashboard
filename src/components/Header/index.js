@@ -4,9 +4,16 @@ import { IoIosNotifications } from "react-icons/io";
 import { MdDarkMode } from "react-icons/md";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import AppContext from '../../context/AppContext';
+import { IoIosMenu } from 'react-icons/io';
+import { Component } from 'react';
 
 
-const Header = () => {
+class Header extends Component {
+
+    render() {
+
+        const {toggleSidebar} = this.props
+
   return (
     <AppContext.Consumer>
     {value => {
@@ -21,9 +28,10 @@ const Header = () => {
           <>
             {isDarkTheme ? (   
                 <div className='header-container-dark'>
-            
+                    
                 <header className='header-1-dark'>
-            
+                    
+                <button type='button' className='button-icon' onClick={toggleSidebar}><IoIosMenu className='menu-icon'/></button>
                 <div className='headings-container-dark'>
                     <p className='para-dark'>Pages/Dashboard</p>
                     <h1 className='heading'>Main Dashboard</h1>
@@ -44,7 +52,7 @@ const Header = () => {
             <div className='header-container-light'>
             
             <header className='header-1-light'>
-            
+            <button type='button' className='button-icon' onClick={toggleSidebar}><IoIosMenu className='menu-icon-light'/></button>
                 <div className='headings-container-light'>
                     <p className='para-light'>Pages/Dashboard</p>
                     <h1 className='heading'>Main Dashboard</h1>
@@ -67,7 +75,8 @@ const Header = () => {
     }}
     </AppContext.Consumer>
    
-  )     
+  )
+}     
 }  
 
 

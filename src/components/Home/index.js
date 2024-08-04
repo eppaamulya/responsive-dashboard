@@ -3,11 +3,20 @@ import './index.css';
 import Header from '../Header';
 import Sidebar from '../Sidebar';
 import Footer from '../Footer';
-import Content from '../Content'
+import Content from '../Content';
 import AppContext from '../../context/AppContext';
 
+
 class Home extends Component {
+    state = {isSidebarVisible: false}
+    
+
+  toggleSidebar = () => {
+    this.setState(prevState => ({isSidebarVisible : !prevState.isSidebarVisible}))
+    
+  };
     render() {
+        const {isSidebarVisible} = this.state
         return (
             <>
                 <AppContext.Consumer>
@@ -17,10 +26,13 @@ class Home extends Component {
                             <>
                                 {isDarkTheme ? (
                                     <div className='home-bg-container-dark'>
-                                        <div className='home-div-dark'>
-                                            <Sidebar />
+                                        
+                                        <Header toggleSidebar={this.toggleSidebar} />
+                                            
+                                            <div className='home-div-dark'>
+                                                <Sidebar isVisible = {isSidebarVisible} />
                                             <div className="home-div-2-dark" >
-                                                <Header />
+                                            
                                                 <Content />
                                                 <Footer />
                                             </div>    
@@ -28,10 +40,13 @@ class Home extends Component {
                                     </div>
                                 ) : (
                                 <div className='home-bg-container-light'>
+                                    
+                                    <Header toggleSidebar={this.toggleSidebar} />
+                                        
                                     <div className='home-div-light'>
-                                        <Sidebar />
+                                    <Sidebar isVisible={isSidebarVisible} />
                                         <div className="home-div-2-light" >
-                                            <Header />
+                                        
                                             <Content />
                                             <Footer />
                                         </div>

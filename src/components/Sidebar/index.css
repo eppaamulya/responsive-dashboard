@@ -79,6 +79,10 @@ ul div li {
     margin-bottom: 20px;
 }
 
+.listy-dark {
+    color: #fff;
+}
+
 .bottom-sidebar-dark {
     background-color: #6470b0;
     display: flex;

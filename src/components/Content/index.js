@@ -4,7 +4,6 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, PieChart, Pie, Cel
 import './index.css';
 
 import { IoIosStats } from "react-icons/io";
-import { FaDollarSign } from "react-icons/fa6";
 import { RiMoneyRupeeCircleFill } from "react-icons/ri";
 import AppContext from '../../context/AppContext';
 import { FcMoneyTransfer } from "react-icons/fc";

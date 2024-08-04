@@ -30,36 +30,36 @@ class Sidebar extends Component  {
             <ul>
                 <div>
                     <IoMdHome className='icon'/>
-                    <li>Dashboard</li>
+                    <li className='listy-dark'>Dashboard</li>
                 </div>
                 <div>
                     <IoCartOutline className='icon' />
                     <a href='#'>
-                    <li>NFT Marketplace</li>
+                    <li className='listy-dark'>NFT Marketplace</li>
                     </a>
                 </div>
                 <div>
                     <IoIosStats className='icon' />
                     <a href='#'>
-                    <li>Tables</li>
+                    <li className='listy-dark'>Tables</li>
                     </a>
                 </div>
                 <div>
                     <BsKanban className='icon' />
                     <a href='#'>
-                    <li>Kanban</li>
+                    <li className='listy-dark'>Kanban</li>
                     </a>
                 </div>
                 <div>
                     <CgProfile className='icon' />
                     <a href='#'>
-                    <li>Profile</li>
+                    <li className='listy-dark'>Profile</li>
                     </a>
                 </div>
                 <div>
                     <FaLock className='icon' />
                     <a href='#'>
-                    <li>Sign in</li>
+                    <li className='listy-dark'>Sign in</li>
                     </a>
                 </div>
                 

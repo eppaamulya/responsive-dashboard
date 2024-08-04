@@ -34,33 +34,24 @@ class Sidebar extends Component  {
                 </div>
                 <div>
                     <IoCartOutline className='icon' />
-                    <a href='#'>
                     <li className='listy-dark'>NFT Marketplace</li>
-                    </a>
+                    
                 </div>
                 <div>
                     <IoIosStats className='icon' />
-                    <a href='#'>
                     <li className='listy-dark'>Tables</li>
-                    </a>
                 </div>
                 <div>
                     <BsKanban className='icon' />
-                    <a href='#'>
                     <li className='listy-dark'>Kanban</li>
-                    </a>
                 </div>
                 <div>
                     <CgProfile className='icon' />
-                    <a href='#'>
                     <li className='listy-dark'>Profile</li>
-                    </a>
                 </div>
                 <div>
                     <FaLock className='icon' />
-                    <a href='#'>
                     <li className='listy-dark'>Sign in</li>
-                    </a>
                 </div>
                 
             </ul>
@@ -76,40 +67,28 @@ class Sidebar extends Component  {
             </div>
             <ul>
                 <div>
-                    <IoMdHome className='icon'/>
-                    <a href='#' >
+                    <IoMdHome className='icon'/> 
                     <li>Dashboard</li>
-                    </a>
                 </div>
                 <div>
                     <IoCartOutline className='icon' />
-                    <a href='#' >
                     <li>NFT Marketplace</li>
-                    </a>
                 </div>
                 <div>
                     <IoIosStats className='icon' />
-                    <a href='#' >
                     <li>Tables</li>
-                    </a>
                 </div>
                 <div>
                     <BsKanban className='icon' />
-                    <a href='#'>
                     <li>Kanban</li>
-                    </a>
                 </div>
                 <div>
                     <CgProfile className='icon' />
-                    <a href='#'>
                     <li>Profile</li>
-                    </a>
                 </div>
                 <div>
                     <FaLock className='icon' />
-                    <a href='#'>
                     <li>Sign in</li>
-                    </a>
                 </div>
                 
             </ul>

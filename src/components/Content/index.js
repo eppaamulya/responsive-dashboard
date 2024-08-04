@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, PieChart, Pie, Cell, LineChart, Line, Legend, Label } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, PieChart, Pie, Cell, LineChart, Line, Legend,} from 'recharts';
 import './index.css';
 
 import { IoIosStats } from "react-icons/io";
@@ -16,7 +16,7 @@ const Content = () => {
   const [investmentPerformance, setInvestmentPerformance] = useState([]);
   const [yearlyIncome, setYearlyIncome] = useState([]);
   const [savingsTrends, setSavingsTrends] = useState([]);
-  const [loanRepayments, setLoanRepayments] = useState([]);
+
 
   useEffect(() => {
     axios.get('https://mocki.io/v1/f1ef0b6a-39de-4342-994b-e619f6492b7d').then(response => {
@@ -39,9 +39,6 @@ const Content = () => {
       setSavingsTrends(response.data.monthlySavings);
     });
 
-    axios.get('https://mocki.io/v1/c58c645d-e830-4822-8ff9-52d8578d6dfd').then(response => {
-      setLoanRepayments(response.data.loanRepayments);
-    });
   }, []);
 
   const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#FF0000'];
